@@ -110,7 +110,7 @@ const iconMap: Record<string, any> = {
       <!-- Colonne photo -->
       <div class="w-full flex justify-center">
         <img
-          src="/Me.JPG"
+          src="/Me.jpg"
           alt="Moi"
           class="w-[180px] md:w-[260px] lg:w-[380px] mx-auto rounded-xl shadow-lg"
         />
