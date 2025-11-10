@@ -48,8 +48,7 @@ const iconMap: Record<string, any> = {
   clapperboard: Clapperboard,
 };
 
-const resolveAsset = (path: string) =>
-new URL(path.startsWith("/") ? path : `/${path}`, import.meta.env.BASE_URL).href;
+const withBase = (p: string) => new URL(p, import.meta.env.BASE_URL).href;
 
 </script>
 
@@ -100,7 +99,7 @@ new URL(path.startsWith("/") ? path : `/${path}`, import.meta.env.BASE_URL).href
                 <img
                   v-for="logo in logos"
                   :key="logo.alt"
-                  :src="resolveAsset(logo.src)"
+                  :src="withBase(logo.src)"
                   :alt="logo.alt"
                   class="h-8 md:h-10 object-contain"
                   loading="lazy"
