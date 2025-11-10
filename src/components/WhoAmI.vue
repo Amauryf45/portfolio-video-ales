@@ -47,6 +47,10 @@ const iconMap: Record<string, any> = {
   users: Users,
   clapperboard: Clapperboard,
 };
+
+const resolveAsset = (path: string) =>
+new URL(path.startsWith("/") ? path : `/${path}`, import.meta.env.BASE_URL).href;
+
 </script>
 
 <template>
@@ -96,7 +100,7 @@ const iconMap: Record<string, any> = {
                 <img
                   v-for="logo in logos"
                   :key="logo.alt"
-                  :src="logo.src"
+                  :src="resolveAsset(logo.src)"
                   :alt="logo.alt"
                   class="h-8 md:h-10 object-contain"
                   loading="lazy"
