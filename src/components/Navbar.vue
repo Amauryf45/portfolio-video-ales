@@ -78,7 +78,7 @@ const isOpen = ref<boolean>(false);
     }"
   >
     <a
-      href="/"
+      href="#"
       class="font-bold text-lg flex items-center"
     >
       <img
@@ -105,7 +105,7 @@ const isOpen = ref<boolean>(false);
             <SheetHeader class="mb-4 ml-4">
               <SheetTitle class="flex items-center">
                 <a
-                  href="/"
+                  href="#"
                   class="flex items-center"
                 >
                   <img src="/logoVF.png" alt="logo" class="h-28 mr-2" />
