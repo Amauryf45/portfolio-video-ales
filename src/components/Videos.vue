@@ -108,10 +108,10 @@ const ytThumb = (id: string) => `https://img.youtube.com/vi/${id}/hqdefault.jpg`
           </Dialog>
         </div>
       </div>
-      <div class="mt-6 text-center ">
+      <!-- <div class="mt-6 text-center ">
         <a href="/videos">
           <Button size="lg">Voir plus</Button>
         </a>
-      </div>
+      </div> -->
   </section>
 </template>
